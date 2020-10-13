@@ -1,0 +1,41 @@
+.raincoat {
+    color: color("gray-700");
+    color: var(--gray-700);
+    font-size: 1rem;
+    line-height: 1.75;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @import "../elements/h1";
+
+    p + p {
+        margin-top: 1.25em;
+    }
+
+    * + blockquote {
+        margin-top: 1.5em;
+    }
+
+    @import "../elements/bockquote";
+    @import "../elements/code";
+    @import "../elements/pre";
+    @import "../elements/pre-code";
+
+    code,
+    pre {
+        font: font("mono");
+    }
+}
+
+.headings\:serif {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: font("serif");
+    }
+}

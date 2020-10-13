@@ -1,0 +1,11 @@
+code {
+    color: color("gray-900");
+    color: var(--gray-900);
+    font-weight: 600;
+    font-size: 0.875em;
+
+    &::before,
+    &::after {
+        content: "`";
+    }
+}

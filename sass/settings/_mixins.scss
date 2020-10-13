@@ -1,0 +1,16 @@
+@mixin generateRootVariables($map) {
+    @each $key,
+    $value in $map {
+        --#{$key}: #{$value};
+    }
+}
+
+@mixin generateVariable($varibale) {
+
+}
+
+// generateVariable($property, $red);
+/*
+background-color: $red;
+background-color: --red;
+*/

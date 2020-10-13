@@ -1,0 +1,8 @@
+@import '../settings/variables';
+@import '../settings/mixins';
+@import '../settings/functions';
+
+html {
+    @include generateRootVariables($colors);
+    font-family: font('sans');
+}

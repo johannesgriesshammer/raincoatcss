@@ -1,0 +1,29 @@
+{
+  "name": "raincoatcss",
+  "version": "1.0.0",
+  "description": "A safeguard for simple pages. Simple, slick and elegant.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.27.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johannesgriesshammer/raincoatcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johannesgriesshammer/raincoatcss/issues"
+  },
+  "homepage": "https://github.com/johannesgriesshammer/raincoatcss#readme"
+}

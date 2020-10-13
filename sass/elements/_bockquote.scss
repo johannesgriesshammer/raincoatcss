@@ -1,0 +1,13 @@
+blockquote {
+    border-left: 0.25em solid #e2e8f0;
+    color: color("gray-900");
+    color: var(--gray-900);
+    font-style: italic;
+    font-weight: 500;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding-left: 1eem;
+
+    + * {
+        margin-top: 1.5em;
+    }
+}
