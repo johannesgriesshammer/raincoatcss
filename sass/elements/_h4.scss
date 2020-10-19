@@ -1,0 +1,9 @@
+h4 {
+    color: #1a202c;
+    font-weight: 600;
+    line-height: 1.5;
+
+    + p {
+        margin-top: 0.5em;
+    }
+}

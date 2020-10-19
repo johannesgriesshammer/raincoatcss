@@ -349,7 +349,26 @@ template {
 }
 
 @charset "UTF-8";
-h1, h2, h3, h4, h5, h6, ul, ol, dl, table, img, blockquote, p {
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+table,
+img,
+blockquote,
+figure,
+p {
   margin: 0; }
 
 /*
@@ -383,8 +402,61 @@ html {
     line-height: 1.1111111; }
     .raincoat h1 + p {
       margin-top: 1.25em; }
-  .raincoat p + p {
+  .raincoat h2 {
+    color: #1a202c;
+    color: var(--gray-900);
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.3333333;
+    margin-top: 2em; }
+    .raincoat h2 + * {
+      margin-top: 1.5em; }
+  .raincoat h3 {
+    color: #1a202c;
+    color: var(--gray-900);
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.6; }
+    .raincoat h3 + p,
+    .raincoat h3 + ol {
+      margin-top: 0.75em; }
+    .raincoat h3 + h4 {
+      margin-top: 0.75em; }
+  .raincoat h4 {
+    color: #1a202c;
+    font-weight: 600;
+    line-height: 1.5; }
+    .raincoat h4 + p {
+      margin-top: 0.5em; }
+  .raincoat img {
+    border-style: solid;
+    height: auto;
+    max-width: 100%; }
+  .raincoat img,
+  .raincoat svg {
+    display: block;
+    vertical-align: middle; }
+  .raincoat figure + * {
+    margin-top: 2em; }
+  .raincoat figcaption {
+    color: #718096;
+    font-size: 0.875em;
+    line-height: 1.45;
+    margin-top: 0.75em; }
+  .raincoat figure,
+  .raincoat img {
+    margin-top: 2em; }
+  .raincoat a {
+    color: #1a202c;
+    text-decoration: underline dotted; }
+  .raincoat p + p,
+  .raincoat p + ul,
+  .raincoat p + ol {
     margin-top: 1.25em; }
+  .raincoat p + h2 {
+    margin-top: 3em; }
+  .raincoat p + h3 {
+    margin-top: 2em; }
   .raincoat * + blockquote {
     margin-top: 1.5em; }
   .raincoat blockquote {
@@ -394,7 +466,7 @@ html {
     font-style: italic;
     font-weight: 500;
     quotes: "“" "”" "‘" "’";
-    padding-left: 1eem; }
+    padding-left: 1em; }
     .raincoat blockquote + * {
       margin-top: 1.5em; }
   .raincoat code {
@@ -430,6 +502,53 @@ html {
   .raincoat code,
   .raincoat pre {
     font: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  .raincoat ul,
+  .raincoat ol {
+    padding-left: 1.15em; }
+    .raincoat ul li + li,
+    .raincoat ol li + li {
+      margin-top: 0.5em; }
+    .raincoat ul li p + p,
+    .raincoat ol li p + p {
+      margin-top: 0.75em; }
+  .raincoat ul ul {
+    margin-top: 0.5em; }
+  .raincoat ul + * {
+    margin-top: 1.25em; }
+  .raincoat table {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    font-size: 0.875em;
+    line-height: 1.7;
+    margin-top: 2em;
+    table-layout: auto;
+    text-align: left;
+    width: 100%; }
+    .raincoat table + h3 {
+      margin-top: 2em; }
+  .raincoat thead {
+    border-bottom: 1px solid #cbd5e0;
+    color: #1a202c;
+    font-weight: 600; }
+    .raincoat thead th {
+      vertical-align: bottom;
+      padding-right: 0.5em;
+      padding-bottom: 0.5em;
+      padding-left: 0.5em; }
+      .raincoat thead th:first-child {
+        padding-left: 0; }
+      .raincoat thead th:last-child {
+        padding-right: 0; }
+  .raincoat tbody tr {
+    border-bottom-color: #e2e8f0;
+    border-bottom-width: 1px; }
+  .raincoat tbody td {
+    padding: 0.5em;
+    vertical-align: top; }
+    .raincoat tbody td:first-child {
+      padding-left: 0; }
+    .raincoat tbody td:last-child {
+      padding-right: 0; }
 
 .headings\:serif h1,
 .headings\:serif h2,

@@ -1,0 +1,11 @@
+img {
+    border-style: solid;
+    height: auto;
+    max-width: 100%;
+}
+
+img,
+svg {
+    display: block;
+    vertical-align: middle;
+}

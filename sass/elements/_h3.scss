@@ -1,0 +1,16 @@
+h3 {
+    color: color("gray-900");
+    color: var(--gray-900);
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.6;
+
+    + p,
+    + ol {
+        margin-top: 0.75em;
+    }
+
+    + h4 {
+        margin-top: 0.75em;
+    }
+}

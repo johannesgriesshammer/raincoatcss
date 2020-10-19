@@ -9,9 +9,33 @@
     }
 
     @import "../elements/h1";
+    @import "../elements/h2";
+    @import "../elements/h3";
+    @import "../elements/h4";
+    @import "../elements/img";
+    @import "../elements/figure";
+    @import "../elements/figcaption";
+    @import "../elements/figure-img";
 
-    p + p {
-        margin-top: 1.25em;
+    a {
+        color: color("gray-900");
+        text-decoration: underline dotted;
+    }
+
+    p {
+        + p,
+        + ul,
+        + ol {
+            margin-top: 1.25em;
+        }
+
+        + h2 {
+            margin-top: 3em;
+        }
+
+        + h3 {
+            margin-top: 2em;
+        }
     }
 
     * + blockquote {
@@ -26,6 +50,87 @@
     code,
     pre {
         font: font("mono");
+    }
+
+    ul,
+    ol {
+        padding-left: 1.15em;
+
+        li {
+            + li {
+                margin-top: 0.5em;
+            }
+
+            p + p {
+                margin-top: 0.75em;
+            }
+        }
+    }
+
+    ul {
+        ul {
+            margin-top: 0.5em;
+        }
+
+        + * {
+            margin-top: 1.25em;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 2px;
+        font-size: 0.875em;
+        line-height: 1.7;
+        margin-top: 2em;
+        table-layout: auto;
+        text-align: left;
+        width: 100%;
+
+        + h3 {
+            margin-top: 2em;
+        }
+    }
+
+    thead {
+        border-bottom: 1px solid #cbd5e0;
+        color: #1a202c;
+        font-weight: 600;
+
+        th {
+            vertical-align: bottom;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom-color: #e2e8f0;
+            border-bottom-width: 1px;
+        }
+
+        td {
+            padding: 0.5em;
+            vertical-align: top;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
     }
 }
 

@@ -1,0 +1,12 @@
+h2 {
+    color: color("gray-900");
+    color: var(--gray-900);
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.3333333;
+    margin-top: 2em;
+
+    + * {
+        margin-top: 1.5em;
+    }
+}
